@@ -1,0 +1,35 @@
+body {background-color: #E5E5E5;
+display: flex;
+justify-content: center;
+margin-top: 100px;}
+a {text-decoration: none;}
+
+.card-body {width: 600px;
+    height: 120px;
+    background-color: white;}
+
+.card-body::after 
+{content: ""; clear: left; display: block;}
+
+.user-pic { width: 44px; 
+    height: 44px;
+    border-radius: 100px;
+    margin: 20px 20px 56px 20px;}
+
+.card,
+.card-user { float: left; }
+
+ .card h1 {font-size: 16px;
+            font-weight: 600;
+            color: black;
+            margin-top: 20px;
+        margin-bottom: 0px;}
+
+.card h2 {font-size: 12px;
+        font-weight: 400;
+        color:#AFB3B9;
+        margin-top: 0px;}
+
+.card p { font-size: 16px;
+    font-weight: 400;
+    color: #79818B;}

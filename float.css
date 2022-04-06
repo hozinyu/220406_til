@@ -1,0 +1,32 @@
+li a {
+    display: block;
+    font-size: 18px;
+    color:#8492a6;
+    text-decoration: none;
+    padding:16px 20px;
+}
+
+
+li {
+    margin-right : 16px;
+    float: left;
+    }
+
+ul { border-bottom: 1.5px solid gainsboro;
+    list-style: none;}
+    /* 자식들이 float 해줘서 높이 없어졌음 그래서 overflow 해줘서 height 값 주던지 
+    or  가상의 마지막 자식 만들어줘서 height값 찾아주기 */
+
+ul::after { content: "";
+            clear:left;
+        display: block;}
+
+
+
+li .selected  {font-weight:800 ;   
+    color: rgb(72, 72, 198);
+    padding-bottom: 16px;
+    border-bottom: 2px solid rgb(72, 72, 198);}
+
+/* 일단 시안이랑 내 마크업이랑 어떻게 다른지 파악 먼저 하고
+차근차근 하나씩 css 먹여주기 중구난방 css ㄴㄴ */
